@@ -102,6 +102,7 @@ Rem
 bbdoc: Set random number generator seed
 End Rem
 Function SeedRnd( seed )
+	active_seed = seed
 	active_rng.Seed(seed)
 End Function
 
