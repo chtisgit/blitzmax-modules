@@ -91,7 +91,7 @@ The optional parameter allows you to use #Rand in 2 ways:
 ]
 End Rem
 Function Rand( min_value,max_value=1 )
-	If max_value > min_value And max_value = 1 Then
+	If max_value < min_value And max_value = 1 Then
 		max_value = min_value
 		min_value = 1
 	EndIf
